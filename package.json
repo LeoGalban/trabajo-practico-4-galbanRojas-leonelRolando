@@ -1,29 +1,20 @@
 {
-  "name": "trabajo-practico-4-galbanrojas-leonelrolando",
+  "name": "express-tp-api-dbz",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon app.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
     "mysql2": "^3.14.1",
-    "nodemon": "^3.1.10",
     "sequelize": "^6.37.7"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LeoGalban/trabajo-practico-4-galbanRojas-leonelRolando.git"
-  },
-  "bugs": {
-    "url": "https://github.com/LeoGalban/trabajo-practico-4-galbanRojas-leonelRolando/issues"
-  },
-  "homepage": "https://github.com/LeoGalban/trabajo-practico-4-galbanRojas-leonelRolando#readme",
-  "description": ""
+  }
 }

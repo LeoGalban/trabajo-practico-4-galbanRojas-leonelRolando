@@ -1,16 +1,14 @@
 import { Sequelize } from "sequelize";
-import dotenv from "dotenv";
-dotenv.config(); //Carga automaticamente las variables que tengo en el archivo
-                 //  .env y las guarda en process.env
+import dotenv from 'dotenv';
+dotenv.config();
 
-const sequelize = new Sequelize (
-    process.env.BD_NAME, // me dice que lea el nonbre en .env
-    process.env.BD_USER,// usuario
-    process.env.BD_PASSWORD,
-    { 
-        host: process.env.BD_HOST,
-        dialect: process.env.BD_DIALECT
+const sequelize = new Sequelize(
+    process.env.DB_NAME,
+    process.env.DB_USER,
+    process.env.DB_PASSWORD,
+    {
+        host: process.env.DB_HOST,
+        dialect: process.env.DB_DIALECT  // 👈 Corrección importante
     }
 );
-
-export default Sequelize
+export default sequelize;
